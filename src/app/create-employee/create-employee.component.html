@@ -1,0 +1,136 @@
+<h3>Create Employee</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">EmployeeId</label>
+      <input type="text" class="form-control" id="empId" required [(ngModel)]="employee.empId" name="empId">
+    </div>
+
+    <div class="form-group">
+      <label for="name">First Name</label>
+      <input type="text" class="form-control" id="firstName" required [(ngModel)]="employee.firstName" name="firstName">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Last Name</label>
+      <input type="text" class="form-control" id="lastName" required [(ngModel)]="employee.lastName" name="firstName">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Email Id</label>
+      <input type="text" class="form-control" id="mailId" required [(ngModel)]="employee.mailId" name="emailId">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Mobile No</label>
+      <input type="text" class="form-control" id="mobileNo" required [(ngModel)]="employee.mobileNo" name="mobileNo">
+    </div>
+
+    <div class="form-group">
+      <label for="name">DOB</label>
+      <input type="text" class="form-control" id="doB" required [(ngModel)]="employee.doB" name="doB">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Prooject Id</label>
+      <input type="text" class="form-control" id=" projectId" required [(ngModel)]="employee. projectId" name=" projectId">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Prooject Name</label>
+      <input type="text" class="form-control" id=" projectName" required [(ngModel)]="employee. projectName" name=" projectName">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Reporting Manager</label>
+      <input type="text" class="form-control" id=" projectName" required [(ngModel)]="employee.repManager" name="repManager">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Project Role</label>
+      <input type="text" class="form-control" id=" projRole" required [(ngModel)]="employee.projRole" name="projRole">
+    </div>
+    
+    <div class="form-group">
+      <label for="name">Experience</label>
+      <input type="text" class="form-control" id=" exp" required [(ngModel)]="employee.exp" name="exp">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Address Line1</label>
+      <input type="text" class="form-control" id=" aLine1" required [(ngModel)]="employee.aLine1" name="aLine1">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Address Line2</label>
+      <input type="text" class="form-control" id=" aLine2" required [(ngModel)]="employee.aLine2" name="aLine2">
+    </div>
+
+    <div class="form-group">
+      <label for="name">City</label>
+      <input type="text" class="form-control" id=" city" required [(ngModel)]="employee.city" name="city">
+    </div>
+
+    <div class="form-group">
+      <label for="name">State</label>
+      <input type="text" class="form-control" id=" state" required [(ngModel)]="employee.state" name="state">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Country</label>
+      <input type="text" class="form-control" id=" country" required [(ngModel)]="employee.country" name="country">
+    </div>
+
+    <div class="form-group">
+      <label for="name">PinCode</label>
+      <input type="text" class="form-control" id=" pinCode" required [(ngModel)]="employee.pinCode" name="pinCode">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Work Location</label>
+      <input type="text" class="form-control" id=" workLoc" required [(ngModel)]="employee.workLoc" name="workLoc">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Odc Access Request</label>
+      <input type="text" class="form-control" id=" odcAccReq" required [(ngModel)]="employee.odcAccReq" name="odcAccReq">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Desk Request</label>
+      <input type="text" class="form-control" id=" desReq" required [(ngModel)]="employee.desReq" name="desReq">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Seat Tag Request</label>
+      <input type="text" class="form-control" id=" seatTag" required [(ngModel)]="employee.seatTag" name="seatTag">
+    </div>
+
+    <div class="form-group">
+      <label for="name">L1 Certification</label>
+      <input type="text" class="form-control" id=" l1Cert" required [(ngModel)]="employee.l1Cert" name="l1Cert">
+    </div>
+
+    <div class="form-group">
+      <label for="name">L2 Certification</label>
+      <input type="text" class="form-control" id=" l2Cert" required [(ngModel)]="employee.l2Cert" name="l2Cert">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Primary Skill</label>
+      <input type="text" class="form-control" id=" primSkill" required [(ngModel)]="employee.primSkill" name="primSkill">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Secondary Skill</label>
+      <input type="text" class="form-control" id=" secSkill" required [(ngModel)]="employee.secSkill" name="secSkill">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <h4>You submitted successfully!</h4>
+  <!-- <button class="btn btn-success" (click)="newEmployee()">Add</button> -->
+</div>
