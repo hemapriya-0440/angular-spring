@@ -4,7 +4,7 @@ export class Employee {
   lastName: string;
    mailId:string;		 	
   mobileNo:string;		 	
- doB:string;
+ doB:Date;
   projectId:string;		 	 
   projectName:string;		 	 
   repManager:string;		 	 

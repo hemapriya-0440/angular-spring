@@ -9,17 +9,19 @@
           <th>Firstname</th>
           <th>Lastname</th>
           <th>Email</th>
+          <th>EmpID</th>
           <th>Actions</th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let employee of employees | async">
+          <td>{{employee.empId}}</td>
           <td>{{employee.firstName}}</td>
           <td>{{employee.lastName}}</td>
           <td>{{employee.mailId}}</td>
           <td><button (click)="deleteEmployee(employee.empId)" class="btn btn-danger">Delete</button>
-              <button (click)="updateEmployee(employee.empId)" class="btn btn-info" style="margin-left: 10px">Update</button>
-              <button (click)="employeeDetails(employee.empId)" class="btn btn-info" style="margin-left: 10px">Details</button>
+              <button (click)="updateEmployee(employee.empId)" class="btn btn-info" style="margin-left: 20px">Update</button>
+              <button (click)="employeeDetails(employee.empId)" class="btn btn-info" style="margin-left: 20px">Details</button>
           </td>
         </tr>
       </tbody>
